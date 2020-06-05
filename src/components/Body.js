@@ -1,9 +1,16 @@
 import React from 'react';
 import { Row, Col } from 'styled-bootstrap-grid';
+import styled from 'styled-components'
+
+const Main = styled.div`
+    background: #efeee9;
+    color: #c17a62;
+    height: 300vh;
+` 
 
 const Body = (props) => {
     return(
-        <div>
+        <Main className="body">
             <Row>
                 <Col col={12}>
                  EMPTY
@@ -22,7 +29,7 @@ const Body = (props) => {
                     submit button
                 </Col>
             </Row>
-        </div>)
+        </Main>)
 }
 
 export default Body
