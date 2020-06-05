@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'styled-bootstrap-grid';
+import { Row, Col } from 'styled-bootstrap-grid';
 
 const Header = (props) => {
     return(
