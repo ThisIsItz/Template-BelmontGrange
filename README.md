@@ -4,9 +4,18 @@ This is a responsive website template for a company named Belmont Grange. It was
 
 ![BelmontGrange](./assets/BelmontGrange.png)
 
+
+
 ![Body](./assets/belmontbody.png)
 
-![Footer](./assets/belmontform.png)
+
+
+![Form](./assets/belmontform.png)
+
+
+![Footer](./assets/belmontfooter.png)
+
+
 
 ![Responsive](./assets/belmontresponsive.png)
 
