@@ -7,7 +7,6 @@ import { GoSearch } from 'react-icons/go';
 
 const Main = styled.div`
     background-image: url(${headerPic});
-    background-image: url(${headerPic}), linear-gradient(red, yellow);
     background-size: cover;
     color: #ffffff;
     height: 70vh;

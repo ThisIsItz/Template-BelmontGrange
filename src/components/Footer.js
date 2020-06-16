@@ -2,7 +2,6 @@ import React from 'react';
 import { Row, Col } from 'styled-bootstrap-grid';
 import { FaInstagram, FaTwitter, FaFacebookF, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
 import styled from 'styled-components'
-import { GoSearch } from 'react-icons/go'
 
 const Main = styled.div`
     background: #26203a;

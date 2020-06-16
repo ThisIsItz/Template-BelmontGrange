@@ -20,9 +20,7 @@ const Input = styled.input`
     padding-left: 20px;
     letter-spacing: 1px;
 `
-const ProvisionalRow = styled(Row)`
-    height: 200vh;
-`
+
 const Button = styled.button`
     border: 1px solid #c17a62;
     color: #c17a62;
@@ -65,17 +63,18 @@ const StyledCol = styled(Col)`
 
 const Content = styled(Row)`
     background: white;
-    position: absolute;
     margin-top: -90px;
     width: 85vw;
     left: 0;
     right: 0;
     margin-left: auto !important;
     margin-right: auto !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
 `
 
 const Image = styled.img`
-      width: 300px;
+      width: 95%;
       height: 200px;
       object-fit: cover;
       margin-top: 15px;
@@ -93,30 +92,61 @@ const StyledRow = styled(Row)`
       padding-right: 50px !important;
 `
 
+const Description = styled.p`
+      padding-top: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+`
+
+const ButtonSmall = styled.button`
+    background: transparent;
+    border: none;
+    height: 40px;
+    width: 40px;
+    line-height: 20px;
+    border: 3px solid #c17a62;
+    margin: 20px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    color: #c17a62;
+
+    &:hover{
+        background: #c17a62;
+        color: #ffffff;
+    }
+` 
+
+const Span = styled.div`
+    font-weight: bold;
+    transform: rotate(-45deg);
+`
+
 const Body = (props) => {
     return(
         <Main>
-            <ProvisionalRow>
-                  <Col col={12}>
                     <Content>
                         {elements.map(e => 
-                            <Col col={4} id={e.id}>
+                            <Col col={12} sm={6} lg={4} id={e.id}>
                                 <Date>{e.date}</Date>
                                 <Image src={e.image}/>
-                                <p>{e.text}</p>
+                                <Description>{e.text}</Description>
                             </Col>
                         )}
+                        <Col col={12}>
+                            <ButtonSmall><Span>1</Span></ButtonSmall>
+                            <ButtonSmall><Span>2</Span></ButtonSmall>
+                            <ButtonSmall><Span>3</Span></ButtonSmall>
+                            <ButtonSmall><Span>4</Span></ButtonSmall>
+                        </Col>
                     </Content>
-                  </Col>
-            </ProvisionalRow>
             <StyledRow>
-                <StyledCol col={6}>
+                <StyledCol col={12} md={6}>
                     <Input type="dropdown" placeholder="TITLE"/>
                     <Input placeholder="NAME"/>
                     <Input placeholder="EMAIL ADDRESS"/>
                     <Input placeholder="TELEPHONE"/>
                 </StyledCol>
-                <Col col={6}>
+                <Col col={12} md={6}>
                     <Updates>UPDATES</Updates>
                     <Title>JOIN THE CLUB</Title>
                     <Text>Sed posuere consectetur est at lobortis.<br/>
