@@ -1,6 +1,14 @@
 ### Website Template
 
-This is a responsive website template for a company named Belmont Grange. It was made using React
+This is a responsive website template for a company named Belmont Grange. It was made using React.
+
+![BelmontGrange](./assets/BelmontGrange.png)
+
+![Body](./assets/belmontbody.png)
+
+![Footer](./assets/belmontform.png)
+
+![Responsive](./assets/belmontresponsive.png)
 
 # How to run the project
 
