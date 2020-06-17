@@ -16,6 +16,7 @@ This is a responsive website template for a company named Belmont Grange. It was
 ![Footer](./assets/belmontfooter.png)
 
 Responsive:
+
 ![Responsive](./assets/belmontresponsive.png)
 
 # How to run the project
